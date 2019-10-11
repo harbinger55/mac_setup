@@ -51,8 +51,6 @@
       tags:
         - brew
 
-
-
     - name: include brew_cask_packages vars
       include_vars:
         file: brew_cask_packages.yml
@@ -67,7 +65,6 @@
       when: homebrew.stat.exists
       tags:
         - brew
-
 
     - name: check if prezto is setup
       stat: path=$HOME/.zprezto
