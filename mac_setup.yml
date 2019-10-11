@@ -217,18 +217,6 @@
       tags: 
         - appstore
 
-    - name: include applications_to_launch vars
-      include_vars:
-        file: applications_to_launch.yml
-      tags: 
-        - apps
-
-    - name: Open Applications
-      command: open -a "{{ item }}"
-      with_items: "{{ application_name }}"
-      tags: 
-        - apps
-
     - name: include Login Packages vars
       include_vars:
         file: login_packages.yml
