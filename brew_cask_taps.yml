@@ -1,2 +1,3 @@
 brew_cask_taps:
+  - 'OJFord/formulae'
   - 'rockymadden/rockymadden'

@@ -228,3 +228,16 @@
       with_items: "{{ application_name }}"
       tags: 
         - apps
+
+    - name: include Login Packages vars
+      include_vars:
+        file: login_packages.yml
+      tags: 
+        - login
+
+    - name: Setup Apps to start at login
+      shell: loginItems -a "{{ item }}"
+      with_items:
+        - "{{ login_packages }}"
+      tags:
+        - login
