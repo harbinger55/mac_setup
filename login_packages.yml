@@ -1,7 +1,9 @@
 login_packages:
+  - '1Password 7'
   - 'Alfred 4'
   - 'Dropbox'
   - 'Evernote'
+  - 'Focus'
   - 'Flycut'
   - 'Google Chrome'
   - 'Slack'
