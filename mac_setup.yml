@@ -229,3 +229,19 @@
         - "{{ login_packages }}"
       tags:
         - login
+
+    - name: Set 24 hour time
+      osx_defaults:
+        domain: com.apple.menuextra.clock
+        key: DateFormat
+        type: string
+        value: "EEE HH:mm:ss"
+      register: restartSystemUIServer
+      tags:
+        - clock
+
+    - name: restart SystemUIServer
+      command: killall SystemUIServer
+      when: restartSystemUIServer is defined
+      tags:
+        - clock
