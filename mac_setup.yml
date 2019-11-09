@@ -62,6 +62,7 @@
         name: "{{ brew_cask_packages }}"
         state: "present"
         accept_external_apps: true
+        upgrade_all: true
       when: homebrew.stat.exists
       tags:
         - brew
