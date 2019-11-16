@@ -9,6 +9,7 @@ brew_packages:
   - 'git'
   - 'go'
   - 'htop'
+  - 'hugo'
   - 'jq'
   - 'kubernetes-cli'
   - 'loginitems'
