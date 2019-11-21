@@ -15,5 +15,7 @@ brew_cask_packages:
   - 'spotify'
   - 'vagrant-manager'
   - 'vagrant'
+  - 'virtualbox-extension-pack'
+  - 'virtualbox'
   - 'visual-studio-code'
   - 'zoomus'
