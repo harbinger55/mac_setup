@@ -3,6 +3,7 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
 $ brew install ansible
 
+$ xcode-select --install
 
 # Post Run
 Change the font in iterm2

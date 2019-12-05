@@ -9,7 +9,7 @@ lint:
   name: yamllint
 platforms:
   - name: mac
-    box: seirra
+    box: macinbox
 provisioner:
   name: ansible
   lint:
