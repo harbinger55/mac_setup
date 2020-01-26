@@ -26,6 +26,7 @@ brew_packages:
   - 'terraform-inventory'
   - 'terraform-provisioner-ansible'
   - 'tfenv'
+  - 'tflint'
   - 'thefuck'
   - 'tmux'
   - 'tree'
