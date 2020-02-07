@@ -6,6 +6,7 @@ brew_cask_packages:
   - 'dropbox'
   - 'evernote'
   - 'google-chrome'
+  - 'insomnia'
   - 'iterm2'
   - 'macvim'
   - 'minikube'
