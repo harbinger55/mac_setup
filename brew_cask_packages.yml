@@ -12,6 +12,7 @@ brew_cask_packages:
   - 'minikube'
   - 'obs'
   - 'slack'
+  - 'soucretree'
   - 'spectacle'
   - 'spotify'
   - 'vagrant-manager'

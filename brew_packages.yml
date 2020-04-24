@@ -10,6 +10,7 @@ brew_packages:
   - 'go'
   - 'htop'
   - 'hugo'
+  - 'istioctl'
   - 'jq'
   - 'kubernetes-cli'
   - 'loginitems'
