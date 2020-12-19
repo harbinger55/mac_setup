@@ -1,8 +1,12 @@
+# To get the appstore id run_once
+# mas search PACKAGE_NAME
+
 appstore_packages:
-  - '1435957248' # Drafts
-  - '442160987' # flycut
-  - '485812721' # tweetdeck
-  - '777233759' # Focus
-  - '927292435' # iStat mini
-  - '1346203938' # OmniFocus 3
-  - '1444383602' # Goodnotes 5
+  - "1435957248" # Drafts
+  - "442160987" # flycut
+  - "485812721" # tweetdeck
+  - "777233759" # Focus
+  - "927292435" # iStat mini
+  - "1346203938" # OmniFocus 3
+  - "1444383602" # Goodnotes 5
+  - "441258766" # Magnet
