@@ -1,11 +1,11 @@
 login_packages:
-  - '1Password 7'
-  - 'Alfred 4'
-  - 'Dropbox'
-  - 'Evernote'
-  - 'Flycut'
-  - 'Focus'
-  - 'Google Chrome'
-  - 'OmniFocus'
-  - 'Slack'
-  - 'Spectacle'
+  - "1Password 7"
+  - "Alfred 4"
+  - "Dropbox"
+  - "Evernote"
+  - "Flycut"
+  - "Focus"
+  - "Google Chrome"
+  - "OmniFocus"
+  - "Slack"
+  - "Magnet"
