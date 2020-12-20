@@ -1,3 +1,4 @@
 brew_cask_taps:
-  - 'OJFord/formulae'
-  - 'rockymadden/rockymadden'
+  - "heroku/brew"
+  - "OJFord/formulae"
+  - "rockymadden/rockymadden"

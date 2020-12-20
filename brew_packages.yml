@@ -9,6 +9,7 @@ brew_packages:
   - "git-lfs"
   - "git"
   - "go"
+  - "heroku"
   - "htop"
   - "hugo"
   - "istioctl"
