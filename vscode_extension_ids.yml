@@ -16,7 +16,7 @@ vscode_ext:
   - "golang.go"
   - "nicollasr.vscode-streamdeck"
   - "oderwat.indent-rainbow"
-  - "pjmiravalle.terraform"
+  - "pjmiravalle.terraform-advanced-syntax-highlighting"
   - "redhat.vscode-yaml"
   - "redhat.vscode-commons"
   - "Shan.code-settings-sync"
