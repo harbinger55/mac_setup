@@ -2,6 +2,7 @@ brew_packages:
   - "autoconf"
   - "bash-completion"
   - "boot2docker"
+  - "cheatsheet"
   - "consul"
   - "dive"
   - "docker-compose"
