@@ -1,6 +1,7 @@
 brew_cask_packages:
   - "1password"
   - "alfred"
+  - "cheatsheet"
   - "docker"
   - "dropbox"
   - "google-chrome"
@@ -15,7 +16,5 @@ brew_cask_packages:
   - "spotify"
   - "vagrant-manager"
   - "vagrant"
-  # - 'virtualbox-extension-pack'
-  # - 'virtualbox'
   - "visual-studio-code"
   - "zoomus"
