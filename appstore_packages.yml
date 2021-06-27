@@ -2,8 +2,8 @@
 # mas search PACKAGE_NAME
 
 appstore_packages:
-  - "1435957248" # Drafts
   - "442160987" # flycut
+  - "406056744" # Evernote
   - "485812721" # tweetdeck
   - "777233759" # Focus
   - "927292435" # iStat mini

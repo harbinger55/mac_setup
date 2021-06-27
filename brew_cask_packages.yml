@@ -1,23 +1,21 @@
-
 brew_cask_packages:
-  - '1password'
-  - 'alfred'
-  - 'docker'
-  - 'dropbox'
-  - 'evernote'
-  - 'google-chrome'
-  - 'insomnia'
-  - 'iterm2'
-  - 'macvim'
-  - 'minikube'
-  - 'obs'
-  - 'slack'
-  - 'soucretree'
-  - 'spectacle'
-  - 'spotify'
-  - 'vagrant-manager'
-  - 'vagrant'
-  - 'virtualbox-extension-pack'
-  - 'virtualbox'
-  - 'visual-studio-code'
-  - 'zoomus'
+  - "1password"
+  - "alfred"
+  - "docker"
+  - "dropbox"
+  - "google-chrome"
+  - "insomnia"
+  - "iterm2"
+  - "macvim"
+  - "minikube"
+  - "obs"
+  - "slack"
+  - "soucretree"
+  - "spectacle"
+  - "spotify"
+  - "vagrant-manager"
+  - "vagrant"
+  # - 'virtualbox-extension-pack'
+  # - 'virtualbox'
+  - "visual-studio-code"
+  - "zoomus"
