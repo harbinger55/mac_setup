@@ -10,6 +10,7 @@ vscode_ext:
   - "ms-kubernetes-tools.vscode-kubernetes-tools"
   - "ms-python.python"
   - "ms-vscode.Go"
+  - "mutantdino.resourcemonitor"
   - "nicollasr.vscode-streamdeck"
   - "oderwat.indent-rainbow"
   - "redhat.vscode-yaml"

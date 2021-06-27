@@ -19,7 +19,7 @@ brew_packages:
   - "mas"
   - "molecule"
   - "nmap"
-  - "obs-virtualcam"
+  # - "obs-virtualcam"
   - "openssl"
   - "packer"
   - "pwgen"
