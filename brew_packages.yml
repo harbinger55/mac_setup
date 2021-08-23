@@ -10,6 +10,7 @@ brew_packages:
   - "git"
   - "go"
   - "heroku"
+  - "homeport/tap/havener"
   - "htop"
   - "hugo"
   - "istioctl"
