@@ -15,6 +15,7 @@ brew_packages:
   - "hugo"
   - "istioctl"
   - "jq"
+  - "k9s"
   - "kubernetes-cli"
   - "loginitems"
   - "mas"
