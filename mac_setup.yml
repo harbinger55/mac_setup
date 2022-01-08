@@ -27,17 +27,17 @@
       tags:
         - brew
 
-    # - name: include brew_cask_taps vars
-    #   include_vars:
-    #     file: brew_cask_taps.yml
-    #   tags:
-    #     - brew
+    - name: include brew_cask_taps vars
+      include_vars:
+        file: brew_cask_taps.yml
+      tags:
+        - brew
 
-    # - name: Tap casks
-    #   homebrew_tap:
-    #     name: "{{ brew_cask_taps }}"
-    #   tags:
-    #     - brew
+    - name: Tap casks
+      homebrew_tap:
+        name: "{{ brew_cask_taps }}"
+      tags:
+        - brew
 
     - name: Install Homebrew packages
       homebrew:
@@ -45,24 +45,26 @@
         state: "present"
         upgrade_all: "{{ upgrade_homebrew_packages }}"
       when: homebrew.stat.exists
+      ignore_errors: yes
       tags:
         - brew
 
-    # - name: include brew_cask_packages vars
-    #   include_vars:
-    #     file: brew_cask_packages.yml
-    #   tags:
-    #     - brew
+    - name: include brew_cask_packages vars
+      include_vars:
+        file: brew_cask_packages.yml
+      tags:
+        - brew
 
-    # - name: Installing Homebrew Cask Packages
-    #   homebrew_cask:
-    #     name: "{{ brew_cask_packages }}"
-    #     state: "present"
-    #     accept_external_apps: true
-    #     upgrade_all: true
-    #   when: homebrew.stat.exists
-    #   tags:
-    #     - brew
+    - name: Installing Homebrew Cask Packages
+      homebrew_cask:
+        name: "{{ brew_cask_packages }}"
+        state: "present"
+        accept_external_apps: true
+        upgrade_all: true
+      when: homebrew.stat.exists
+      ignore_errors: yes
+      tags:
+        - brew
 
     - name: check if prezto is setup
       stat: path=$HOME/.zprezto
