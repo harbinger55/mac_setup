@@ -1,12 +1,9 @@
 ---
-
-  
 - name: Build localhost
   hosts: localhost
   connection: local
 
   vars:
-
     upgrade_homebrew_packages: true
     mas_upgrade_all_apps: true
 
@@ -27,21 +24,21 @@
     - name: include brew_packages vars
       include_vars:
         file: brew_packages.yml
-      tags: 
-        - brew
-        
-    - name: include brew_cask_taps vars
-      include_vars:
-        file: brew_cask_taps.yml
-      tags: 
+      tags:
         - brew
 
-    - name: Tap casks
-      homebrew_tap:
-        name: "{{ brew_cask_taps }}"
-      tags: 
-        - brew
-        
+    # - name: include brew_cask_taps vars
+    #   include_vars:
+    #     file: brew_cask_taps.yml
+    #   tags:
+    #     - brew
+
+    # - name: Tap casks
+    #   homebrew_tap:
+    #     name: "{{ brew_cask_taps }}"
+    #   tags:
+    #     - brew
+
     - name: Install Homebrew packages
       homebrew:
         name: "{{ brew_packages }}"
@@ -51,30 +48,30 @@
       tags:
         - brew
 
-    - name: include brew_cask_packages vars
-      include_vars:
-        file: brew_cask_packages.yml
-      tags: 
-        - brew
+    # - name: include brew_cask_packages vars
+    #   include_vars:
+    #     file: brew_cask_packages.yml
+    #   tags:
+    #     - brew
 
-    - name: Installing Homebrew Cask Packages
-      homebrew_cask:
-        name: "{{ brew_cask_packages }}"
-        state: "present"
-        accept_external_apps: true
-        upgrade_all: true
-      when: homebrew.stat.exists
-      tags:
-        - brew
+    # - name: Installing Homebrew Cask Packages
+    #   homebrew_cask:
+    #     name: "{{ brew_cask_packages }}"
+    #     state: "present"
+    #     accept_external_apps: true
+    #     upgrade_all: true
+    #   when: homebrew.stat.exists
+    #   tags:
+    #     - brew
 
     - name: check if prezto is setup
       stat: path=$HOME/.zprezto
       register: prezto
       tags:
         - prezto
-      
+
     - name: Clone prezto
-      git: 
+      git:
         repo: "https://github.com/sorin-ionescu/prezto.git"
         dest: "$HOME/.zprezto"
       when: not prezto.stat.exists
@@ -86,16 +83,14 @@
       register: zgen
       tags:
         - zgen
-      
+
     - name: Clone zgen
-      git: 
+      git:
         repo: "https://github.com/tarjoilija/zgen.git"
         dest: "$HOME/.zgen"
       when: not zgen.stat.exists
       tags:
         - zge
-
- 
 
     - name: Install prezto theme from git.
       git:
@@ -122,16 +117,16 @@
         - powerline
 
     - name: Clone powerline
-      git: 
+      git:
         repo: "https://github.com/powerline/fonts.git"
         dest: "{{ ansible_env.HOME }}/fonts"
-        depth:  1
+        depth: 1
       register: fonts
       when: not powerline.stat.exists
       tags:
         - powerline
 
-# Not working...∫
+    # Not working...∫
     - name: install fonts
       command: "./install.sh"
       args:
@@ -140,7 +135,7 @@
       when: fonts is defined and not powerline.stat.exists
       tags:
         - powerline
-    
+
     - name: clean fonts
       file:
         state: absent
@@ -148,7 +143,6 @@
       when: clean_fonts is defined and  powerline.stat.exists
       tags:
         - powerline
-
 
     - name: Setup dotfiles
       git:
@@ -159,7 +153,7 @@
       when: not myconf.stat.exists
       tags:
         - dotfiles
-    
+
     - name: sync dotfiles
       synchronize:
         src: ~/myconf-tmp/
@@ -174,27 +168,26 @@
     - name: include VSCODE extentions vars
       include_vars:
         file: vscode_extension_ids.yml
-      tags: 
+      tags:
         - vscode
 
     - name: Install VSCode extentions
       command: "code --install-extension {{ item }}"
-      with_items: 
+      with_items:
         - "{{ vscode_ext }}"
       tags:
         - vscode
 
-
     - name: Set zsh as default shell
       become: false
-      user: 
+      user:
         name: "{{ ansible_user_id }}"
         shell: /bin/zsh
 
     - name: include appstore_packages vars
       include_vars:
         file: appstore_packages.yml
-      tags: 
+      tags:
         - appstore
 
     - name: List installed MAS apps.
@@ -202,26 +195,26 @@
       register: mas_list
       check_mode: false
       changed_when: false
-      tags: 
+      tags:
         - appstore
 
     - name: Ensure configured MAS apps are installed.
       command: mas install "{{ item.id|default(item) }}"
       with_items: "{{ appstore_packages }}"
       when: (item.id | default(item) | string) not in mas_list.stdout
-      tags: 
+      tags:
         - appstore
 
     - name: Upgrade all apps (if configured).
       command: mas upgrade
       when: mas_upgrade_all_apps
-      tags: 
+      tags:
         - appstore
 
     - name: include Login Packages vars
       include_vars:
         file: login_packages.yml
-      tags: 
+      tags:
         - login
 
     - name: Setup Apps to start at login
