@@ -1,4 +1,5 @@
 brew_cask_taps:
+  - "1password/tap/1password-cli"
   - "heroku/brew"
   - "OJFord/formulae"
   - "rockymadden/rockymadden"

@@ -10,6 +10,7 @@ brew_packages:
   - "git"
   - "go"
   - "heroku"
+  - "hidetatz/tap/kubecolor"
   - "htop"
   - "hugo"
   - "istioctl"
