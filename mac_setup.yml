@@ -94,17 +94,17 @@
       tags:
         - zge
 
-    - name: Install prezto theme from git.
-      git:
-        repo: "https://github.com/bhilburn/powerlevel9k.git"
-        dest: "{{ ansible_env.HOME}}/.zprezto/modules/prompt/external/powerlevel9k"
-        force: true
+    # - name: Install prezto theme from git.
+    #   git:
+    #     repo: "https://github.com/bhilburn/powerlevel9k.git"
+    #     dest: "{{ ansible_env.HOME}}/.zprezto/modules/prompt/external/powerlevel9k"
+    #     force: true
 
-    - name: Link prezto theme.
-      file:
-        src: "{{ ansible_env.HOME}}/.zprezto/modules/prompt/external/powerlevel9k/powerlevel9k.zsh-theme"
-        dest: "{{ ansible_env.HOME}}/.zprezto/modules/prompt/functions/prompt_powerlevel9k_setup"
-        state: link
+    # - name: Link prezto theme.
+    #   file:
+    #     src: "{{ ansible_env.HOME}}/.zprezto/modules/prompt/external/powerlevel9k/powerlevel9k.zsh-theme"
+    #     dest: "{{ ansible_env.HOME}}/.zprezto/modules/prompt/functions/prompt_powerlevel9k_setup"
+    #     state: link
 
     - name: check if dotfiles are setup
       stat: path=$HOME/.myconf
@@ -112,39 +112,39 @@
       tags:
         - dotfiles
 
-    - name: check if powerline fonts is setup
-      stat: path="{{ ansible_env.HOME }}/Library/Fonts/Go Mono Bold for Powerline.ttf"
-      register: powerline
-      tags:
-        - powerline
+    # - name: check if powerline fonts is setup
+    #   stat: path="{{ ansible_env.HOME }}/Library/Fonts/Go Mono Bold for Powerline.ttf"
+    #   register: powerline
+    #   tags:
+    #     - powerline
 
-    - name: Clone powerline
-      git:
-        repo: "https://github.com/powerline/fonts.git"
-        dest: "{{ ansible_env.HOME }}/fonts"
-        depth: 1
-      register: fonts
-      when: not powerline.stat.exists
-      tags:
-        - powerline
+    # - name: Clone powerline
+    #   git:
+    #     repo: "https://github.com/powerline/fonts.git"
+    #     dest: "{{ ansible_env.HOME }}/fonts"
+    #     depth: 1
+    #   register: fonts
+    #   when: not powerline.stat.exists
+    #   tags:
+    #     - powerline
 
     # Not working...∫
-    - name: install fonts
-      command: "./install.sh"
-      args:
-        chdir: "{{ ansible_env.HOME }}/fonts"
-      register: clean_fonts
-      when: fonts is defined and not powerline.stat.exists
-      tags:
-        - powerline
+    # - name: install fonts
+    #   command: "./install.sh"
+    #   args:
+    #     chdir: "{{ ansible_env.HOME }}/fonts"
+    #   register: clean_fonts
+    #   when: fonts is defined and not powerline.stat.exists
+    #   tags:
+    #     - powerline
 
-    - name: clean fonts
-      file:
-        state: absent
-        path: "{{ ansible_env.HOME }}/fonts"
-      when: clean_fonts is defined and  powerline.stat.exists
-      tags:
-        - powerline
+    # - name: clean fonts
+    #   file:
+    #     state: absent
+    #     path: "{{ ansible_env.HOME }}/fonts"
+    #   when: clean_fonts is defined and  powerline.stat.exists
+    #   tags:
+    #     - powerline
 
     - name: Setup dotfiles
       git:
