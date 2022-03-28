@@ -11,7 +11,7 @@ xcode-select --install
 # Running the playbook
 checkout the repo and cd into it
 
-``bash
+```bash
 git clone git@github.com:harbinger55/mac_setup.git
 cd mac_setup
 ```
