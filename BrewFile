@@ -63,6 +63,7 @@ brew "vault"
 brew "wget"
 brew "zsh-syntax-highlighting"
 brew "zsh"
+brew "pv"
 
 # Taps
 tap "heroku/brew"
