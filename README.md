@@ -21,8 +21,3 @@ Then run the anible playbook
 ```bash
 ansible-playbook ./mac_setup.yml
 ```
-
-# Post Run
-Change the font in iterm2
-    [command] + , -> Profiles -> Text -> Font "Go Mono for Powerline"
-                                         "14"
