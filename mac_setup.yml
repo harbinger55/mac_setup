@@ -11,7 +11,7 @@
     - name: Check if Homebrew is already installed in /usr
       stat:
         path: /usr/local/bin/brew
-      register: homebrew
+      register: homebrew_local
       tags:
         - brew
         - brew-bundle
@@ -19,19 +19,19 @@
     - name: Check if Homebrew is already installed /opt
       stat:
         path: /opt/homebrew/bin/brew
-      register: homebrew
+      register: homebrew_opt
       tags:
         - brew
 
     - fail:
         msg: Please perform the pre-req's in the README.md
-      when: not homebrew.stat.exists
+      when: not homebrew_local.stat.exists and not homebrew_opt.stat.exists
       tags:
         - brew
 
     - name: Install brew bundles
       command: "brew bundle --file BrewFile -q "
-      when: homebrew.stat.exists
+      when: homebrew_local.stat.exists or homebrew_opt.stat.exists
       tags:
         - brew-bundle
 
