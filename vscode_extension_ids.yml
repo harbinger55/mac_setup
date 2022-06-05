@@ -5,6 +5,7 @@ vscode_ext:
   - "donjayamanne.githistory"
   - "eamodio.gitlens"
   - "golang.go"
+  - "hashicorp.hcl"
   - "hashicorp.terraform"
   - "HookyQR.beautify"
   - "mechatroner.rainbow-csv"
@@ -27,5 +28,4 @@ vscode_ext:
   - "usernamehw.errorlens"
   - "visualstudioexptteam.vscodeintellicode"
   - "vscode-icons-team.vscode-icons"
-  - "wholroyd.hcl"
   - "windmilleng.vscode-go-autotest"
