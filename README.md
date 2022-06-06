@@ -21,3 +21,11 @@ Then run the anible playbook
 ```bash
 ansible-playbook ./mac_setup.yml
 ```
+
+# Manual installs
+## Caldigit
+https://downloads.caldigit.com/
+Docking station & apple superdrive, etc
+
+## Obsidian
+https://obsidian.md/
