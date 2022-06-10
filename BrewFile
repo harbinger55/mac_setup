@@ -24,6 +24,7 @@ cask "vagrant"
 # Brews
 # brew "hidetatz/tap/kubecolor"
 brew "autoconf"
+brew "awscli"
 brew "bash-completion"
 brew "bat"
 brew "boot2docker"
