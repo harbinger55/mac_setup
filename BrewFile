@@ -1,7 +1,7 @@
 # Casks
 # cask "google-chrome"
 # cask "soucretree"
- cask "visual-studio-code"
+#  cask "visual-studio-code"
 # cask "zoomus"
 cask "1password"
 cask "1password/tap/1password-cli"
