@@ -1,10 +1,9 @@
 login_packages:
   - "1Password 7"
-  - "Alfred 4"
+  - "Alfred 5"
   - "CheatSheet"
   - "Dropbox"
   - "Element"
-  - "Evernote"
   - "Firefox"
   - "Flycut"
   - "Magnet"
