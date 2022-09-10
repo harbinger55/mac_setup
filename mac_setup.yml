@@ -75,11 +75,11 @@
     #     dest: "{{ ansible_env.HOME}}/.zprezto/modules/prompt/functions/prompt_powerlevel9k_setup"
     #     state: link
 
-    - name: check if dotfiles are setup
-      stat: path=$HOME/.myconf
-      register: myconf
-      tags:
-        - dotfiles
+    # - name: check if dotfiles are setup
+    #   stat: path=$HOME/.myconf
+    #   register: myconf
+    #   tags:
+    #     - dotfiles
 
     # - name: check if powerline fonts is setup
     #   stat: path="{{ ansible_env.HOME }}/Library/Fonts/Go Mono Bold for Powerline.ttf"
@@ -115,26 +115,26 @@
     #   tags:
     #     - powerline
 
-    - name: Setup dotfiles
-      git:
-        repo: "git@github.com:harbinger55/myconf.git"
-        separate_git_dir: "$HOME/.myconf"
-        dest: $HOME/myconf-tmp
-      register: myconf_cloned
-      when: not myconf.stat.exists
-      tags:
-        - dotfiles
+    # - name: Setup dotfiles
+    #   git:
+    #     repo: "git@github.com:harbinger55/myconf.git"
+    #     separate_git_dir: "$HOME/.myconf"
+    #     dest: $HOME/myconf-tmp
+    #   register: myconf_cloned
+    #   when: not myconf.stat.exists
+    #   tags:
+    #     - dotfiles
 
-    - name: sync dotfiles
-      synchronize:
-        src: ~/myconf-tmp/
-        dest: ~/
-        recursive: yes
-        rsync_opts:
-          - "--exclude=.git"
-      when: myconf_cloned is defined
-      tags:
-        - dotfiles
+    # - name: sync dotfiles
+    #   synchronize:
+    #     src: ~/myconf-tmp/
+    #     dest: ~/
+    #     recursive: yes
+    #     rsync_opts:
+    #       - "--exclude=.git"
+    #   when: myconf_cloned is defined
+    #   tags:
+    #     - dotfiles
 
     - name: include VSCODE extentions vars
       include_vars:
