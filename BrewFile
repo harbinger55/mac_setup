@@ -75,7 +75,7 @@ brew "wget"
 brew "yq"
 brew "zsh-syntax-highlighting"
 brew "zsh"
-brew "pulumi/tap/pulumi"
+brew "pulumi"
 
 # Taps
 tap "heroku/brew"
