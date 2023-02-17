@@ -2,10 +2,11 @@
 # mas search PACKAGE_NAME
 
 appstore_packages:
+  - "1346203938" # OmniFocus 3
+  - "1444383602" # Goodnotes 5
   - "442160987" # flycut
   - "485812721" # tweetdeck
   - "777233759" # Focus
-  - "927292435" # iStat mini
-  - "1346203938" # OmniFocus 3
-  - "1444383602" # Goodnotes 5
   - "803453959" # Slack
+  - "927292435" # iStat mini
+  - "937984704" # Amphetamine

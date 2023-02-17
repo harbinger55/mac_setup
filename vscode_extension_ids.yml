@@ -4,6 +4,7 @@ vscode_ext:
   - "davidanson.vscode-markdownlint"
   - "donjayamanne.githistory"
   - "eamodio.gitlens"
+  - "GitHub.vscode-pull-request-github"
   - "golang.go"
   - "hashicorp.hcl"
   - "hashicorp.terraform"
