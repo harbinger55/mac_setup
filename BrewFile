@@ -16,7 +16,7 @@ cask "monitorcontrol"
 cask "obs"
 cask "rectangle"
 cask "spotify"
-cask "vial"
+cask "sengi"
 
 
 # Brews
