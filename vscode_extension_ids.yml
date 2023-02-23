@@ -8,7 +8,7 @@ vscode_ext:
   - "golang.go"
   - "hashicorp.hcl"
   - "hashicorp.terraform"
-  - "HookyQR.beautify"
+  # - "HookyQR.beautify"
   - "mechatroner.rainbow-csv"
   - "michelemelluso.gitignore"
   - "ms-azuretools.vscode-docker"
