@@ -11,3 +11,4 @@ login_packages:
   - "Rectangle"
   - "Slack"
   - "Sengi"
+  - "Google Chat"
