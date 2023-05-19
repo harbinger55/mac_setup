@@ -5,7 +5,6 @@
 
   vars:
     upgrade_homebrew_packages: true
-    mas_upgrade_all_apps: true
 
   tasks:
     - name: Check if Homebrew is already installed in /usr
@@ -155,32 +154,6 @@
         name: "{{ ansible_user_id }}"
         shell: /bin/zsh
 
-    - name: include appstore_packages vars
-      include_vars:
-        file: appstore_packages.yml
-      tags:
-        - appstore
-
-    - name: List installed MAS apps.
-      command: mas list
-      register: mas_list
-      check_mode: false
-      changed_when: false
-      tags:
-        - appstore
-
-    - name: Ensure configured MAS apps are installed.
-      command: mas install "{{ item.id|default(item) }}"
-      with_items: "{{ appstore_packages }}"
-      when: (item.id | default(item) | string) not in mas_list.stdout
-      tags:
-        - appstore
-
-    - name: Upgrade all apps (if configured).
-      command: mas upgrade
-      when: mas_upgrade_all_apps
-      tags:
-        - appstore
 
     - name: include Login Packages vars
       include_vars:

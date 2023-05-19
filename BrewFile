@@ -1,3 +1,15 @@
+# MAC store Apps
+mas "OmniFocus 3", id: 1346203938 # OmniFocus 3
+mas "Goodnotes 5", id: 1444383602 # Goodnotes 5
+mas "flycut", id: 442160987 # flycut
+mas "tweetdeck", id: 485812721 # tweetdeck
+mas "Focus", id: 777233759 # Focus
+mas "Slack", id: 803453959 # Slack
+mas "iStat mini", id: 927292435 # iStat mini
+mas "Amphetamine", id: 937984704 # Amphetamine
+mas "Grammarly", id: 1462114288 # Grammarly
+# mas "Zoom", id: 414329397
+
 # Casks
 # cask "google-chrome"
 # cask "soucretree"
