@@ -33,6 +33,7 @@ cask "sengi"
 
 # Brews
 # brew "hidetatz/tap/kubecolor"
+brew "act"
 brew "autoconf"
 brew "awscli"
 brew "bash-completion"
