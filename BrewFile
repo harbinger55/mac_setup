@@ -30,6 +30,7 @@ cask "openlens"
 cask "rectangle"
 cask "spotify"
 cask "sengi"
+cask "utm"
 
 
 # Brews
@@ -46,7 +47,6 @@ brew "csvkit"
 brew "dagger/tap/dagger-cue"
 brew "dive"
 brew "docker-machine"
-brew "ec2-ami-tools"
 brew "fzf"
 brew "fzf"
 brew "gh"
