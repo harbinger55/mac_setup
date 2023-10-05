@@ -16,7 +16,7 @@ mas "Grammarly", id: 1462114288 # Grammarly
 
 # Taps
 tap "OJFord/formulae"
-# tap "homebrew/cask-fonts"
+tap "homebrew/cask-fonts"
 # tap "rockymadden/rockymadden"
 
 # Casks
@@ -26,7 +26,7 @@ cask "visual-studio-code"
 # cask "zoomus"
 cask "1password"
 cask "1password/tap/1password-cli"
-cask "homebrew/cask-fonts/font-hack-nerd-font"
+cask "font-fira-code-nerd-font"
 cask "alfred"
 cask "cheatsheet"
 cask "docker"
