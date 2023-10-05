@@ -1,3 +1,7 @@
+tap "homebrew/cask"
+tap "buo/cask-upgrade"
+brew "mas"
+
 # MAC store Apps
 mas "OmniFocus 3", id: 1346203938 # OmniFocus 3
 mas "Goodnotes 5", id: 1444383602 # Goodnotes 5
@@ -10,6 +14,11 @@ mas "Amphetamine", id: 937984704 # Amphetamine
 mas "Grammarly", id: 1462114288 # Grammarly
 # mas "Zoom", id: 414329397
 
+# Taps
+tap "OJFord/formulae"
+# tap "homebrew/cask-fonts"
+# tap "rockymadden/rockymadden"
+
 # Casks
 # cask "google-chrome"
 # cask "soucretree"
@@ -17,6 +26,7 @@ cask "visual-studio-code"
 # cask "zoomus"
 cask "1password"
 cask "1password/tap/1password-cli"
+cask "homebrew/cask-fonts/font-hack-nerd-font"
 cask "alfred"
 cask "cheatsheet"
 cask "docker"
@@ -34,12 +44,15 @@ cask "utm"
 
 
 # Brews
+# brew "bartender"
+# brew "font-hack-nerd-font"
+# brew "heroku"
 # brew "hidetatz/tap/kubecolor"
+# brew "slack-cli"
 brew "act"
 brew "atuin"
 brew "autoconf"
 brew "awscli"
-brew "bartender"
 brew "bash-completion"
 brew "bat"
 brew "boot2docker"
@@ -53,9 +66,8 @@ brew "fzf"
 brew "gh"
 brew "git-lfs"
 brew "git"
-brew "go"
 brew "go-task/tap/go-task"
-brew "heroku"
+brew "go"
 brew "hstr"
 brew "htop"
 brew "httpie"
@@ -84,7 +96,6 @@ brew "pyenv"
 brew "python"
 brew "ripgrep"
 brew "rtx"
-brew "slack-cli"
 brew "starship"
 brew "staticcheck"
 brew "steampipe"
@@ -95,13 +106,11 @@ brew "thefuck"
 brew "tldr"
 brew "tmux"
 brew "tree"
-brew "watch"
 brew "vault"
+brew "watch"
 brew "wget"
 brew "yadm"
 brew "yq"
 brew "zsh-syntax-highlighting"
 brew "zsh"
-# Taps
-# tap "OJFord/formulae"
-# tap "rockymadden/rockymadden"
+
