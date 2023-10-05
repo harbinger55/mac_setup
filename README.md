@@ -35,3 +35,9 @@ https://www.elgato.com/en/downloads
 
 ## Grammarly
 https://app.grammarly.com/apps
+
+## Setup iterm2 profile
+After Dropbox is installed and synced
+In iterm2 go to Preferencs -> General -> Preferences
+Check the `Load preferences from a custum folder or URL`
+Select your folder in Dropbox
