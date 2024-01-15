@@ -1,6 +1,6 @@
-# tap "homebrew/cask"
+
 tap "buo/cask-upgrade"
-brew "mas"
+
 
 # MAC store Apps
 mas "OmniFocus 3", id: 1346203938 # OmniFocus 3
@@ -22,13 +22,11 @@ tap "common-fate/granted"
 # tap "rockymadden/rockymadden"
 
 # Casks
-# cask "google-chrome"
+
 # cask "soucretree"
 cask "visual-studio-code"
-# cask "zoomus"
 cask "1password"
 cask "1password/tap/1password-cli"
-# cask "bartender"
 cask "elgato-stream-deck"
 cask "font-fira-code-nerd-font"
 cask "font-hack-nerd-font"
@@ -55,10 +53,6 @@ cask "utm"
 
 
 # Brews
-# brew "bartender"
-# brew "heroku"
-# brew "hidetatz/tap/kubecolor"
-# brew "slack-cli"
 brew "act"
 brew "atuin"
 brew "autoconf"
@@ -77,9 +71,9 @@ brew "fzf"
 brew "gh"
 brew "git-lfs"
 brew "git"
+brew "go-jira"
 brew "go-task/tap/go-task"
 brew "go"
-brew "go-jira"
 brew "granted"
 brew "hstr"
 brew "htop"
@@ -109,12 +103,11 @@ brew "pyenv-virtualenv"
 brew "pyenv"
 brew "python"
 brew "ripgrep"
-# brew "rtx"
 brew "starship"
 brew "staticcheck"
 brew "steampipe"
-brew "terraformer"
 brew "terraform-inventory"
+brew "terraformer"
 brew "tfenv"
 brew "tflint"
 brew "thefuck"
