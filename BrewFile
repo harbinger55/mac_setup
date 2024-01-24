@@ -1,59 +1,60 @@
 
-tap "buo/cask-upgrade"
-
 
 # MAC store Apps
-mas "OmniFocus 3", id: 1346203938 # OmniFocus 3
-mas "Goodnotes 5", id: 1444383602 # Goodnotes 5
-mas "flycut", id: 442160987 # flycut
-mas "tweetdeck", id: 485812721 # tweetdeck
-mas "Focus", id: 777233759 # Focus
-mas "Slack", id: 803453959 # Slack
-mas "iStat mini", id: 927292435 # iStat mini
-mas "Amphetamine", id: 937984704 # Amphetamine
-mas "Grammarly", id: 1462114288 # Grammarly
 # mas "Zoom", id: 414329397
+mas "Amphetamine", id: 937984704 # Amphetamine
+mas "flycut", id: 442160987 # flycut
+mas "Focus", id: 777233759 # Focus
+mas "Goodnotes 5", id: 1444383602 # Goodnotes 5
+mas "Grammarly", id: 1462114288 # Grammarly
+mas "iStat mini", id: 927292435 # iStat mini
+mas "OmniFocus 3", id: 1346203938 # OmniFocus 3
+mas "Slack", id: 803453959 # Slack
+mas "tweetdeck", id: 485812721 # tweetdeck
 
 # Taps
-tap "OJFord/formulae"
-tap "homebrew/cask-fonts"
+tap "buo/cask-upgrade"
 tap "common-fate/granted"
+tap "hashicorp/tap"
+tap "homebrew/cask-fonts"
+tap "OJFord/formulae"
 
 # tap "rockymadden/rockymadden"
 
 # Casks
 
+# cask "mutedeck"
 # cask "soucretree"
-cask "visual-studio-code"
 cask "1password"
 cask "1password/tap/1password-cli"
-cask "elgato-stream-deck"
-cask "font-fira-code-nerd-font"
-cask "font-hack-nerd-font"
-cask "font-fira-mono-nerd-font"
-cask "font-meslo-lg-nerd-font"
-cask "font-symbols-only-nerd-font"
-cask "font-meslo-for-powerline"
-cask "font-powerline-symbols"
 cask "alfred"
 cask "cheatsheet"
 cask "docker"
 cask "dropbox"
+cask "elgato-stream-deck"
+cask "font-fira-code-nerd-font"
+cask "font-fira-mono-nerd-font"
+cask "font-hack-nerd-font"
+cask "font-meslo-for-powerline"
+cask "font-meslo-lg-nerd-font"
+cask "font-powerline-symbols"
+cask "font-symbols-only-nerd-font"
 cask "gitkraken"
 cask "iterm2"
 cask "jitsi-meet"
 cask "monitorcontrol"
-# cask "mutedeck"
 cask "obs"
 cask "openlens"
 cask "rectangle"
-cask "spotify"
 cask "sengi"
+cask "spotify"
 cask "utm"
+cask "visual-studio-code"
 
 
 # Brews
 brew "act"
+brew "aquaproj/aqua/aqua"
 brew "atuin"
 brew "autoconf"
 brew "awscli"
@@ -75,6 +76,8 @@ brew "go-jira"
 brew "go-task/tap/go-task"
 brew "go"
 brew "granted"
+brew "hashicorp/tap/packer"
+brew "hashicorp/tap/vault"
 brew "hstr"
 brew "htop"
 brew "httpie"
