@@ -54,6 +54,7 @@ cask "visual-studio-code"
 
 # Brews
 brew "act"
+brew "argocd"
 brew "aquaproj/aqua/aqua"
 brew "atuin"
 brew "autoconf"
