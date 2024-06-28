@@ -8,6 +8,7 @@ mas "Grammarly", id: 1462114288 # Grammarly
 mas "iStat mini", id: 927292435 # iStat mini
 mas "Slack", id: 803453959 # Slack
 mas "mastonaut", id: 1450757574 # mastonaut
+mas "omnifocus-4", id: 1542143627 # omnifocus-4
 
 # Taps
 tap "buo/cask-upgrade"
@@ -81,7 +82,6 @@ brew "hstr"
 brew "htop"
 brew "httpie"
 brew "hugo"
-brew "hugo"
 brew "istioctl"
 brew "jq"
 brew "k9s"
@@ -109,6 +109,7 @@ brew "python"
 brew "ripgrep"
 brew "skaffold"
 brew "starship"
+brew "sslscan"
 brew "staticcheck"
 brew "steampipe"
 brew "terraform-inventory"
