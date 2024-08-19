@@ -9,6 +9,7 @@ mas "iStat mini", id: 927292435 # iStat mini
 mas "Slack", id: 803453959 # Slack
 mas "mastonaut", id: 1450757574 # mastonaut
 mas "omnifocus-4", id: 1542143627 # omnifocus-4
+mas "tailscale", id: 1475387142 # tailscale
 
 # Taps
 tap "buo/cask-upgrade"
@@ -85,6 +86,7 @@ brew "hugo"
 brew "istioctl"
 brew "jq"
 brew "k9s"
+brew "knqyf263/pet/pet"
 brew "kubectx"
 brew "kubernetes-cli"
 brew "kustomize"
@@ -121,6 +123,7 @@ brew "tldr"
 brew "tmux"
 brew "tree"
 brew "vault"
+brew "viddy" # watch replacement
 brew "watch"
 brew "wget"
 brew "yadm"
