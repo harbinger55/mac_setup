@@ -31,6 +31,8 @@
     - name: Install brew bundles
       command: "brew bundle --file BrewFile -q "
       when: homebrew_local.stat.exists or homebrew_opt.stat.exists
+      failed_when: false
+      register: brew_bundle_result
       tags:
         - brew-bundle
 
@@ -65,7 +67,7 @@
     - name: Set zsh as default shell
       become: false
       user:
-        name: "{{ ansible_user_id }}"
+        name: "{{ ansible_facts['user_id'] }}"
         shell: /bin/zsh
 
 
