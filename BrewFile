@@ -1,143 +1,408 @@
-
-
-# MAC store Apps
-# mas "Zoom", id: 414329397
-mas "Amphetamine", id: 937984704 # Amphetamine
-mas "flycut", id: 442160987 # flycut
-mas "Grammarly", id: 1462114288 # Grammarly
-mas "iStat mini", id: 927292435 # iStat mini
-mas "Slack", id: 803453959 # Slack
-mas "mastonaut", id: 1450757574 # mastonaut
-mas "omnifocus-4", id: 1542143627 # omnifocus-4
-mas "tailscale", id: 1475387142 # tailscale
-
-# Taps
+tap "1password/tap"
+tap "aquaproj/aqua"
 tap "buo/cask-upgrade"
+tap "cloudflare/cloudflare"
 tap "common-fate/granted"
+tap "dagger/tap"
+tap "go-task/tap"
+tap "gromgit/fuse"
 tap "hashicorp/tap"
-# tap "homebrew/cask-fonts"
-tap "OJFord/formulae"
-
-# tap "rockymadden/rockymadden"
-
-# Casks
-
-# cask "docker"
-# cask "mutedeck"
-# cask "soucretree"
+tap "homebrew/bundle"
+tap "knqyf263/pet"
+tap "kong/deck"
+tap "ojford/formulae"
+tap "outrigdev/outrig"
+tap "peak/tap"
+tap "pulumi/tap"
+tap "thecasualcoder/stable"
+tap "turbot/tap"
+# Run your GitHub Actions locally
+brew "act"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# Static checker for GitHub Actions workflow files
+brew "actionlint"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Automate deployment, configuration, and upgrading
+brew "ansible"
+# Checks ansible playbooks for practices and behaviour
+brew "ansible-lint"
+# Declarative CLI Version manager
+brew "aqua", link: false
+# GitOps Continuous Delivery for Kubernetes
+brew "argocd"
+# Improved shell history for zsh, bash, fish and nushell
+brew "atuin"
+# Automatic configure script builder
+brew "autoconf"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Programmable completion for Bash 3.2
+brew "bash-completion"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
+# Tool to obtain certs from Let's Encrypt and autoenable HTTPS
+brew "certbot"
+# Utility for rendering projects templates
+brew "copier"
+# Suite of command-line tools for converting to and working with CSV
+brew "csvkit"
+# Good-lookin' diffs with diff-highlight and more
+brew "diff-so-fancy"
+# Tool for exploring each layer in a docker image
+brew "dive"
+# Create Docker hosts locally and on cloud providers
+brew "docker-machine"
+# Disk Usage/Free Utility - a better 'df' alternative
+brew "duf"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Collection of GNU find, xargs, and locate
+brew "findutils"
+# Fast and simple Node.js version manager
+brew "fnm"
+# Terminal JSON viewer
+brew "fx"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
+brew "git"
+# Git extension for versioning large files
+brew "git-lfs"
+# GNU Privacy Guard (OpenPGP)
+brew "gnupg"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Simple jira command-line client in Go
+brew "go-jira"
+# Fast linters runner for Go
+brew "golangci-lint"
+# Kubernetes package manager
+brew "helm"
+# Bash and zsh history suggest box
+brew "hstr"
+# Improved top (interactive process viewer)
+brew "htop"
+# User-friendly cURL replacement (command-line HTTP client)
+brew "httpie"
+# Configurable static site generator
+brew "hugo"
+# Istio configuration command-line utility
+brew "istioctl"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Interactive environments for writing and running code
+brew "jupyterlab"
+# Kubernetes CLI To Manage Your Clusters In Style!
+brew "k9s"
+# Development kit for the Java programming language
+brew "openjdk"
+# Open-source distributed event streaming platform
+brew "kafka"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
+# Tool that can switch between kubectl contexts easily and create aliases
+brew "kubectx"
+# Template-free customization of Kubernetes YAML manifests
+brew "kustomize"
+# C library of Git core methods that is re-entrant and linkable
+brew "libgit2@1.7"
+# Clone of ls with colorful output, file type icons, and more
+brew "lsd"
+# Mac App Store command-line interface
+brew "mas"
+# Like sed, awk, cut, join & sort for name-indexed data such as CSV
+brew "miller"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
+# Automated testing for Ansible roles
+brew "molecule"
+# 'traceroute' and 'ping' in a single tool
+brew "mtr"
+# Command-line interface for New Relic
+brew "newrelic-cli"
+# Port scanning utility for large networks
+brew "nmap"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node@18"
+# Manage multiple Node.js versions
+brew "nvm"
+# OpenShift command-line interface tools
+brew "openshift-cli"
+# Python dependency management tool
+brew "pipenv"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
+# Framework for managing multi-language pre-commit hooks
+brew "pre-commit"
+# Monitor data's progress through a pipe
+brew "pv"
+# Password generator
+brew "pwgen"
+# Python version management
+brew "pyenv"
+# Pyenv plugin to manage virtualenv
+brew "pyenv-virtualenv"
+# Unified tool to manage your Rancher server
+brew "rancher-cli"
+# Persistent key-value database, with built-in net interface
+brew "redis"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Safe, concurrent, practical language
+brew "rust"
+# Easy and Repeatable Kubernetes Development
+brew "skaffold"
+# Test SSL/TLS enabled services to discover supported cipher suites
+brew "sslscan"
+# Cross-shell prompt for astronauts
+brew "starship"
+# State of the art linter for the Go programming language
+brew "staticcheck"
+# Use SQL to instantly query your cloud services
+brew "steampipe"
+# User interface to the TELNET protocol
+brew "telnet"
+# Tool to generate documentation from Terraform modules
+brew "terraform-docs"
+# Go app which generates a dynamic Ansible inventory from a Terraform state file
+brew "terraform-inventory"
+# Improve Terraform's plan output
+brew "terraform_landscape"
+# CLI tool to generate terraform files from existing infrastructure
+brew "terraformer"
+# Thin wrapper for Terraform e.g. for locking state
+brew "terragrunt"
+# Managing Terraform stacks with change detections and code generations
+brew "terramate"
+# Terraform version manager inspired by rbenv
+brew "tfenv"
+# Linter for Terraform files
+brew "tflint"
+# Terraform Model Context Protocol (MCP) Tool
+brew "tfmcp"
+# CLI to sort Terraform variables and outputs
+brew "tfsort"
+# Programmatically correct mistyped console commands
+brew "thefuck"
+# In-memory geolocation data store, spatial index, and realtime geofence
+brew "tile38"
+# Simplified and community-driven man pages
+brew "tldr"
+# Terminal multiplexer
+brew "tmux"
+# Vulnerability scanner for container images, file systems, and Git repos
+brew "trivy"
+# Modern watch command
+brew "viddy"
+# Executes a program periodically, showing output fullscreen
+brew "watch"
+# Internet file retriever
+brew "wget"
+# Network analyzer and capture tool - without graphical user interface
+brew "wireshark"
+# Yet Another Dotfiles Manager
+brew "yadm"
+# JavaScript package manager
+brew "yarn"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
+brew "yq"
+# Find security issues in GitHub Actions setups
+brew "zizmor"
+# UNIX shell (command interpreter)
+brew "zsh"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
+# Utility to export your existing Cloudflare resources as Terraform resources
+brew "cloudflare/cloudflare/cf-terraforming"
+# The easiest way to access your cloud.
+brew "common-fate/granted/granted"
+# Dagger is a programmable deployment system.
+brew "dagger/tap/dagger-cue"
+# Task runner / simpler Make alternative written in Go
+brew "go-task/tap/go-task"
+# FUSE-based file system backed by Amazon S3
+brew "gromgit/fuse/s3fs-mac"
+# Consul
+brew "hashicorp/tap/consul"
+# Packer
+brew "hashicorp/tap/packer"
+# Terraform Language Server
+brew "hashicorp/tap/terraform-ls"
+# Vault
+brew "hashicorp/tap/vault"
+# Simple command-line snippet manager
+brew "knqyf263/pet/pet"
+# Declarative configuration for Kong
+brew "kong/deck/deck"
+# Tool for managing login items
+brew "ojford/formulae/loginitems"
+# Parallel S3 and local filesystem execution tool
+brew "peak/tap/s5cmd"
+# A command-line utility to print the summary of the terraform plan
+brew "thecasualcoder/stable/tf-summarize"
+# Dashboards for DevOps. Visualize cloud configurations. Assess security posture against a massive library of benchmarks. Build custom dashboards with code.
+brew "turbot/tap/powerpipe"
+# Password manager that keeps all passwords secure behind one password
 cask "1password"
-cask "1password/tap/1password-cli"
+# Command-line interface for 1Password
+cask "1password-cli"
+# Application launcher and productivity software
 cask "alfred"
+# Declarative CLI Version manager. Support Lazy Install and Sharable configuration mechanism named Registry. Switch versions seamlessly
+
+cask "aquaproj/aqua/aqua"
+# Tool to list all active shortcuts of the current application
 cask "cheatsheet"
+# Terminal-based AI coding assistant
+cask "claude-code"
+# Client for the Dropbox cloud storage service
 cask "dropbox"
+# Assign keys, and then decorate and label them
 cask "elgato-stream-deck"
 cask "font-fira-code-nerd-font"
 cask "font-fira-mono-nerd-font"
 cask "font-hack-nerd-font"
 cask "font-meslo-for-powerline"
 cask "font-meslo-lg-nerd-font"
+cask "font-noto-color-emoji"
+cask "font-noto-emoji"
 cask "font-powerline-symbols"
 cask "font-symbols-only-nerd-font"
+# Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# Git client focusing on productivity
 cask "gitkraken"
+# Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Secure video conferencing app
 cask "jitsi-meet"
+# File system integration
+cask "macfuse"
+# Tool to control external monitor brightness & volume
 cask "monitorcontrol"
+# Open-source software for live streaming and screen recording
 cask "obs"
+# Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# cask "outrigdev/outrig/outrig"
+# Open source build of Lens Kubernetes IDE
+cask "openlens"
+# Real-time debugging for Go programs, similar to Chrome DevTools
+cask "outrigdev/outrig/outrig"
+# Kubernetes and container management on the desktop
 cask "rancher"
+# Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# Mastodon and Pleroma desktop client
 cask "sengi"
+# Music streaming service
 cask "spotify"
+# Virtual machines UI using QEMU
 cask "utm"
+# Open-source code editor
 cask "visual-studio-code"
-
-
-# Brews
-brew "act"
-# brew "aquaproj/aqua/aqua"
-brew "argocd"
-brew "atuin"
-brew "autoconf"
-brew "awscli"
-brew "bash-completion"
-brew "bat"
-brew "boot2docker"
-brew "copier"
-brew "csvkit"
-brew "dagger/tap/dagger-cue"
-brew "diff-so-fancy"
-brew "dive"
-brew "docker-machine"
-brew "duf"
-brew "fd"
-brew "findutils"
-brew "fnm"
-brew "fx"
-brew "fzf"
-brew "gh"
-brew "git-lfs"
-brew "git"
-brew "go-jira"
-brew "go-task/tap/go-task"
-brew "go"
-brew "granted"
-brew "hashicorp/tap/consul"
-brew "hashicorp/tap/packer"
-brew "hashicorp/tap/vault"
-brew "helm"
-brew "hstr"
-brew "htop"
-brew "httpie"
-brew "hugo"
-brew "istioctl"
-brew "jq"
-brew "k9s"
-brew "knqyf263/pet/pet"
-brew "kubectx"
-brew "kubernetes-cli"
-brew "kustomize"
-brew "loginitems"
-brew "lsd"
-brew "mas"
-brew "miller"
-brew "mise"
-brew "molecule"
-brew "nmap"
-brew "openssl"
-brew "packer"
-brew "peak/tap/s5cmd"
-brew "pipenv"
-brew "pipx"
-# brew "pulumi/tap/pulumi"
-brew "pv"
-brew "pwgen"
-brew "pyenv-virtualenv"
-brew "pyenv"
-brew "python"
-brew "ripgrep"
-brew "rust"
-brew "skaffold"
-brew "sslscan"
-brew "starship"
-brew "staticcheck"
-brew "steampipe"
-brew "terraform-inventory"
-brew "terraformer"
-brew "tfenv"
-brew "tflint"
-brew "tfmcp"
-brew "thefuck"
-brew "tldr"
-brew "tmux"
-brew "tree"
-brew "vault"
-brew "viddy" # watch replacement
-brew "watch"
-brew "wget"
-brew "yadm"
-brew "yq"
-brew "zsh-syntax-highlighting"
-brew "zsh"
-
+mas "Amphetamine", id: 937984704
+mas "Flycut", id: 442160987
+mas "Focus", id: 777233759
+mas "Goodnotes", id: 1444383602
+mas "Grammarly for Safari", id: 1462114288
+mas "iStat Menus", id: 1319778037
+mas "iStat Mini", id: 927292435
+mas "Mastonaut", id: 1450757574
+mas "OmniFocus", id: 1346203938
+mas "OmniFocus", id: 1542143627
+mas "Tailscale", id: 1475387142
+vscode "adadot.code-reactions"
+vscode "adamibs.terraform-live-graph"
+vscode "akmittal.hugofy"
+vscode "amazonwebservices.aws-toolkit-vscode"
+vscode "angular.ng-template"
+vscode "arahata.linter-actionlint"
+vscode "atlassian.atlascode"
+vscode "codezombiech.gitignore"
+vscode "dagger.dagger"
+vscode "davidanson.vscode-markdownlint"
+vscode "docker.docker"
+vscode "donjayamanne.githistory"
+vscode "eamodio.gitlens"
+vscode "editorconfig.editorconfig"
+vscode "emeraldwalk.runonsave"
+vscode "esbenp.prettier-vscode"
+vscode "fnando.linter"
+vscode "foxundermoon.shell-format"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "github.vscode-github-actions"
+vscode "github.vscode-pull-request-github"
+vscode "golang.go"
+vscode "gruntfuggly.todo-tree"
+vscode "hashicorp.hcl"
+vscode "hashicorp.terraform"
+vscode "kevinrose.vsc-python-indent"
+vscode "mechatroner.rainbow-csv"
+vscode "michelemelluso.gitignore"
+vscode "mikecunneen.cunneen-copy-breadcrumbs"
+vscode "mineiros.terramate"
+vscode "ms-azuretools.vscode-containers"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
+vscode "ms-python.autopep8"
+vscode "ms-python.debugpy"
+vscode "ms-python.isort"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "ms-vscode-remote.remote-ssh-edit"
+vscode "ms-vscode.makefile-tools"
+vscode "ms-vscode.remote-explorer"
+vscode "ms-vsliveshare.vsliveshare"
+vscode "mutantdino.resourcemonitor"
+vscode "nicollasr.vscode-streamdeck"
+vscode "oderwat.indent-rainbow"
+vscode "pjmiravalle.terraform-advanced-syntax-highlighting"
+vscode "redhat.ansible"
+vscode "redhat.java"
+vscode "redhat.vscode-commons"
+vscode "redhat.vscode-redhat-account"
+vscode "redhat.vscode-yaml"
+vscode "shardulm94.trailing-spaces"
+vscode "shd101wyy.markdown-preview-enhanced"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "task.vscode-task"
+vscode "tfsec.tfsec"
+vscode "timonwong.shellcheck"
+vscode "tomoki1207.pdf"
+vscode "tonybaloney.vscode-pets"
+vscode "usernamehw.errorlens"
+vscode "visualstudioexptteam.intellicode-api-usage-examples"
+vscode "visualstudioexptteam.vscodeintellicode"
+vscode "vscjava.migrate-java-to-azure"
+vscode "vscjava.vscode-gradle"
+vscode "vscjava.vscode-java-debug"
+vscode "vscjava.vscode-java-dependency"
+vscode "vscjava.vscode-java-pack"
+vscode "vscjava.vscode-java-test"
+vscode "vscjava.vscode-java-upgrade"
+vscode "vscjava.vscode-maven"
+vscode "vscode-icons-team.vscode-icons"
+vscode "windmilleng.vscode-go-autotest"
+vscode "zainchen.json"
+vscode "zgm.cuesheet"
+vscode "znck.grammarly"
+go "golang.org/x/tools/gopls"
+go "github.com/mineiros-io/terramate-ls/cmd/terramate-ls"
