@@ -18,16 +18,8 @@ tap "thecasualcoder/stable"
 tap "turbot/tap"
 # Run your GitHub Actions locally
 brew "act"
-# Static analysis and lint tool, for (ba)sh scripts
-brew "shellcheck"
 # Static checker for GitHub Actions workflow files
 brew "actionlint"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.14"
-# Display directories as trees (with optional color/HTML output)
-brew "tree"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # Checks ansible playbooks for practices and behaviour
@@ -106,8 +98,6 @@ brew "jq"
 brew "jupyterlab"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "k9s"
-# Development kit for the Java programming language
-brew "openjdk"
 # Open-source distributed event streaming platform
 brew "kafka"
 # Kubernetes command-line interface
@@ -138,8 +128,12 @@ brew "nmap"
 brew "node@18"
 # Manage multiple Node.js versions
 brew "nvm"
+# Development kit for the Java programming language
+brew "openjdk"
 # OpenShift command-line interface tools
 brew "openshift-cli"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # Python dependency management tool
 brew "pipenv"
 # Execute binaries from Python packages in isolated environments
@@ -156,14 +150,19 @@ brew "pwgen"
 brew "pyenv"
 # Pyenv plugin to manage virtualenv
 brew "pyenv-virtualenv"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
 # Unified tool to manage your Rancher server
 brew "rancher-cli"
 # Persistent key-value database, with built-in net interface
 brew "redis"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+brew "rtk"
 # Safe, concurrent, practical language
 brew "rust"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
 # Easy and Repeatable Kubernetes Development
 brew "skaffold"
 # Test SSL/TLS enabled services to discover supported cipher suites
@@ -204,6 +203,8 @@ brew "tile38"
 brew "tldr"
 # Terminal multiplexer
 brew "tmux"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
 # Vulnerability scanner for container images, file systems, and Git repos
 brew "trivy"
 # Modern watch command
@@ -263,7 +264,6 @@ cask "1password-cli"
 # Application launcher and productivity software
 cask "alfred"
 # Declarative CLI Version manager. Support Lazy Install and Sharable configuration mechanism named Registry. Switch versions seamlessly
-
 cask "aquaproj/aqua/aqua"
 # Tool to list all active shortcuts of the current application
 cask "cheatsheet"
@@ -404,5 +404,5 @@ vscode "windmilleng.vscode-go-autotest"
 vscode "zainchen.json"
 vscode "zgm.cuesheet"
 vscode "znck.grammarly"
-go "golang.org/x/tools/gopls"
 go "github.com/mineiros-io/terramate-ls/cmd/terramate-ls"
+go "golang.org/x/tools/gopls"
