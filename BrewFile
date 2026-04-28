@@ -308,8 +308,6 @@ cask "rancher"
 cask "rectangle"
 # Mastodon and Pleroma desktop client
 cask "sengi"
-# Music streaming service
-cask "spotify"
 # Virtual machines UI using QEMU
 cask "utm"
 # Open-source code editor
